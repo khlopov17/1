@@ -1,0 +1,69 @@
+#include <iostream>
+#include <windows.h>
+#include <string>
+#include <iomanip>
+
+using namespace std;
+const int MAX_LENGTH = 100;
+int main()
+{
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+
+	cout << setw(30) << "Завдання №1 (HELLO2)" << endl;
+
+	char name[MAX_LENGTH + 1];
+	cout << "Як вас звуть?: ";
+	cin.getline(name, 100);
+	cout << "Добрий день, " << name << "!" << endl;
+
+	cout << setw(30) << "Завдання №2 (PARROT)" << endl;
+	char line[MAX_LENGTH + 1];
+	cin.getline(line, 100);
+	cout << line;
+
+	cout << setw(30) << "Завдання №3 (SWAP)" << endl;
+	int a, b, c;
+	cout << "Введіть число 'A': ";
+	cin >> a;
+	cout << "Введіть число 'B': ";
+	cin >> b;
+	cout << "До перетворення: " << "A = " << a << ";" << "    " << "B = " << b << ";" << endl;
+	c = a;
+	a = b;
+	b = c;
+	cout << "Після перетворення: " << "A = " << a << ";" << "    " << "B = " << b << ";" << endl;
+
+	cout << setw(30) << "Завдання №4 (SWAP3)" << endl;
+	int a1, b1, c1, d1;
+	cout << "Введіть число 'A': ";
+	cin >> a1;
+	cout << "Введіть число 'B': ";
+	cin >> b1;
+	cout << "Введіть число 'C': ";
+	cin >> c1;
+	cout << "До перетворення: " << "A = " << a1 << ";" << "    " << "B = " << b1 << ";" << "    " << "C = " << c1 << ";" << endl;
+	d1 = a1;
+	a1 = c1;
+	c1 = b1;
+	b1 = d1;
+	cout << "Після перетворення: " << "A = " << a1 << ";" << "    " << "B = " << b1 << ";" << "    " << "C = " << c1 << ";" << endl;
+
+	cout << setw(30) << "Завдання №5 (SWAP4)" << endl;
+	int a2, b2, c2, d2, f2;
+	cout << "Введіть число 'A': ";
+	cin >> a2;
+	cout << "Введіть число 'B': ";
+	cin >> b2;
+	cout << "Введіть число 'C': ";
+	cin >> c2;
+	cout << "Введіть число 'D': ";
+	cin >> d2;
+	cout << "До перетворення: " << "A = " << a2 << ";" << "    " << "B = " << b2 << ";" << "    " << "C = " << c2 << ";" << "    " << "D = " << d2 << ";" << endl;
+	f2 = a2;
+	a2 = d2;
+	d2 = c2;
+	c2 = b2;
+	b2 = f2;
+	cout << "Після перетворення: " << "A = " << a2 << ";" << "    " << "B = " << b2 << ";" << "    " << "C = " << c2 << ";" << "    " << "D = " << d2 << ";" << endl;
+}
